@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlayZoom</string>
+    <string name="get_started_title">Compra tu Comida \n Favorita</string>
+    <string name="get_started">Comenzar</string>
+    <string name="get_restaurant_title">Restaurante</string>
+    <string name="get_menu_title">Menu</string>
+    <string name="get_menu_favorite">Disfrute de sus Platillos Favoritos</string>
+</resources>

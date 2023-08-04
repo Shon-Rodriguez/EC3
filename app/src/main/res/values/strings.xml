@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EC3</string>
+    <string name="get_started_title">Buy your Favorite  n\ Food</string>
+    <string name="get_started">Get Started</string>
+    <string name="get_restaurant_title">Restaurant</string>
+    <string name="get_menu_title">Menu</string>
+    <string name="get_menu_favorite">Enjoy your Favorite Dishes</string>
+</resources>

@@ -46,6 +46,7 @@ public class HomeFragment extends Fragment {
         binding.rvFoodsResume.setLayoutManager(layoutManager);
     }
 
+
     private List<Menus> getData() {
         List<Menus> menus = new ArrayList<>();
         menus.add(new Foods("https://buenazo.cronosmedia.glr.pe/original/2021/06/27/606b558c255c081036000e14.jpg", "Ceviche","Platillo preparado con pescado crudo marinado en jugo de limón y condimentado con otros ingredientes que varían según la región"));

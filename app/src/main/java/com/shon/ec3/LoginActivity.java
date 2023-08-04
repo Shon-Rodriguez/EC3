@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
             String email = binding.tilEmail.getEditText().getText().toString();
             String password = binding.tilPassword.getEditText().getText().toString();;
 
-            if (email.equals("ejemploe@idat.com.pe") && password.equals("Peru12345678")) { // Agregar el correo del destinatario
+            if (email.equals("ejemploe@idat.com.pe") && password.equals("Peru123")) { // Agregar el correo del destinatario
                 Toast.makeText(this, "Ingresando", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, PrincipalActivity.class);
                 intent.putExtra(PrincipalActivity.EMAIL, binding.tilEmail.getEditText().getText().toString());
@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
     }
     private boolean isCredentialsValidate(String email, String password){
         boolean isEmailOk = !email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches(); //Validar el Email
-        boolean isPasswordOk = password.length() >= 8; // Valida que la contra sera mayor o igual a 8 caracteres
+        boolean isPasswordOk = password.length() >= 7; // Valida que la contra sera mayor o igual a 8 caracteres
         return isEmailOk && isPasswordOk;
     }
 }

@@ -51,6 +51,12 @@ public class RVResumeAdapter extends RecyclerView.Adapter<RVResumeAdapter.Resume
 
         public void bind(Menus menus) {
 
+            if (menus instanceof Foods) {
+                binding.txtLittleDescription.setVisibility(View.VISIBLE);
+            } else{
+                return;
+            }
+
             binding.txtNameFood.setText(menus.getName());
             ImageLoader imageLoader = Coil.imageLoader(binding.getRoot().getContext());
             ImageRequest request = new ImageRequest.Builder(binding.getRoot().getContext())
@@ -59,8 +65,6 @@ public class RVResumeAdapter extends RecyclerView.Adapter<RVResumeAdapter.Resume
                     .target(binding.imgFood)
                     .build();
             imageLoader.enqueue(request);
-
-            binding.txtLittleDescription.setVisibility(View.GONE);
 
         }
     }
